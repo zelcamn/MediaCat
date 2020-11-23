@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(15, 56, 15);
+color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSlider" name="positionSlider">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>500</y>
+      <width>791</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(15, 56, 15);
+font: 75 8pt &quot;System&quot;;
+color: rgb(48, 98, 48);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>530</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;
+color: rgb(48, 98, 48);</string>
+       </property>
+       <property name="text">
+        <string>назад</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="playButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;
+
+color: rgb(48, 98, 48);</string>
+       </property>
+       <property name="text">
+        <string>пуск</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>1024</width>
+         <height>1024</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="forwardButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;
+color: rgb(48, 98, 48);</string>
+       </property>
+       <property name="text">
+        <string>вперёд</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QSlider" name="loudSlider">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>550</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(15, 56, 15);;
+selection-background-color: rgb(155, 188, 15);
+gridline-color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;
+color: rgb(48, 98, 48);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="repeatButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>550</y>
+      <width>71</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;
+color: rgb(48, 98, 48);</string>
+    </property>
+    <property name="text">
+     <string>повтор</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>451</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;
+color: rgb(48, 98, 48);</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>0</y>
+      <width>331</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;
+color: rgb(48, 98, 48);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="trackName">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>540</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(155, 188, 15);
+font: 75 8pt &quot;System&quot;;
+color: rgb(48, 98, 48);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>799</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuadd">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuadd_2">
+     <property name="title">
+      <string>add</string>
+     </property>
+     <addaction name="actiontrack_2"/>
+     <addaction name="actionplaylist_2"/>
+    </widget>
+    <widget class="QMenu" name="menudelete">
+     <property name="title">
+      <string>delete</string>
+     </property>
+     <addaction name="actiontrackdelete"/>
+     <addaction name="actionplaylistdelete"/>
+    </widget>
+    <addaction name="menuadd_2"/>
+    <addaction name="actionupdate_1"/>
+    <addaction name="actionchange_lists_1"/>
+    <addaction name="menudelete"/>
+   </widget>
+   <addaction name="menuadd"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionupdate_1">
+   <property name="text">
+    <string>update</string>
+   </property>
+  </action>
+  <action name="actiontrack_2">
+   <property name="text">
+    <string>track</string>
+   </property>
+  </action>
+  <action name="actionplaylist_2">
+   <property name="text">
+    <string>playlist</string>
+   </property>
+  </action>
+  <action name="actionchange_lists_1">
+   <property name="text">
+    <string>change lists</string>
+   </property>
+  </action>
+  <action name="actiontrackdelete">
+   <property name="text">
+    <string>track</string>
+   </property>
+  </action>
+  <action name="actionplaylistdelete">
+   <property name="text">
+    <string>playlist</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
